@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_navbar_menu_items",
+  "info": {
+    "displayName": "MenuItem"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "maxLength": 20,
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": false
+    }
+  },
+  "config": {}
+}

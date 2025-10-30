@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.29.0",
+    "@strapi/plugin-graphql": "^5.29.0",
     "@strapi/plugin-users-permissions": "5.29.0",
     "@strapi/strapi": "5.29.0",
     "pg": "8.8.0",
@@ -37,5 +38,12 @@
   "strapi": {
     "uuid": "8d5ca4fd-c6f4-4b70-ab89-e0ca8d6d7aef",
     "installId": "88b2876d7ac98b3354f55ad627612cfaedaf89d45c1a7b203091ac00c99424b0"
-  }
+  },
+  "trustedDependencies": [
+    "@apollo/protobufjs",
+    "@swc/core",
+    "core-js-pure",
+    "esbuild",
+    "sharp"
+  ]
 }

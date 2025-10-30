@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_navbar_submenus",
+  "info": {
+    "displayName": "Submenu"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 20,
+      "required": true
+    },
+    "children": {
+      "type": "component",
+      "component": "navbar.menu-item",
+      "repeatable": true,
+      "min": 1
+    }
+  },
+  "config": {}
+}

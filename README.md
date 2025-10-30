@@ -1,4 +1,4 @@
-# 🚀 Getting started with Strapi
+# 🚀 IIE Admin panel with Strapi
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
 
@@ -9,7 +9,7 @@ Start your Strapi application with autoReload enabled. [Learn more](https://docs
 ```
 npm run develop
 # or
-yarn develop
+bun develop
 ```
 
 ### `start`
@@ -19,7 +19,7 @@ Start your Strapi application with autoReload disabled. [Learn more](https://doc
 ```
 npm run start
 # or
-yarn start
+bun start
 ```
 
 ### `build`
@@ -29,15 +29,7 @@ Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-
 ```
 npm run build
 # or
-yarn build
-```
-
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
-
-```
-yarn strapi deploy
+bun build
 ```
 
 ## 📚 Learn more
@@ -55,7 +47,3 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 - [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
 - [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
 - [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>

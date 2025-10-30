@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menus",
+  "info": {
+    "singularName": "menu",
+    "pluralName": "menus",
+    "displayName": "Menu"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 20,
+      "required": true,
+      "unique": false
+    },
+    "type": {
+      "type": "enumeration",
+      "required": true,
+      "default": "Sub-Menus",
+      "enum": [
+        "Link",
+        "Menu items",
+        "Sub-Menus"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "Link"
+          ]
+        }
+      }
+    },
+    "menuItems": {
+      "type": "component",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "Menu items"
+          ]
+        }
+      },
+      "component": "navbar.menu-item",
+      "repeatable": true
+    },
+    "submenus": {
+      "type": "component",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "Sub-Menus"
+          ]
+        }
+      },
+      "component": "navbar.submenu",
+      "repeatable": true
+    }
+  }
+}
