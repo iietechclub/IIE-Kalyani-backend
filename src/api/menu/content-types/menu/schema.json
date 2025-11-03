@@ -20,11 +20,11 @@
     "type": {
       "type": "enumeration",
       "required": true,
-      "default": "Sub-Menus",
+      "default": "SubMenus",
       "enum": [
         "Link",
-        "Menu items",
-        "Sub-Menus"
+        "MenuItems",
+        "SubMenus"
       ]
     },
     "url": {
@@ -48,11 +48,11 @@
             {
               "var": "type"
             },
-            "Menu items"
+            "MenuItems"
           ]
         }
       },
-      "component": "navbar.menu-item",
+      "component": "navigation.menu-item",
       "repeatable": true
     },
     "submenus": {
@@ -63,11 +63,11 @@
             {
               "var": "type"
             },
-            "Sub-Menus"
+            "SubMenus"
           ]
         }
       },
-      "component": "navbar.submenu",
+      "component": "navigation.submenu",
       "repeatable": true
     }
   }

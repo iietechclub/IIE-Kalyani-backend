@@ -10,19 +10,5 @@
     "draftAndPublish": true
   },
   "pluginOptions": {},
-  "attributes": {
-    "Menus": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::menu.menu"
-    },
-    "Banners": {
-      "type": "media",
-      "multiple": true,
-      "allowedTypes": [
-        "images",
-        "files"
-      ]
-    }
-  }
+  "attributes": {}
 }

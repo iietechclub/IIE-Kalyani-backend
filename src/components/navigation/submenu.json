@@ -1,7 +1,7 @@
 {
   "collectionName": "components_navbar_submenus",
   "info": {
-    "displayName": "Submenu"
+    "displayName": "SubMenu"
   },
   "options": {},
   "attributes": {
@@ -12,7 +12,7 @@
     },
     "children": {
       "type": "component",
-      "component": "navbar.menu-item",
+      "component": "navigation.menu-item",
       "repeatable": true,
       "min": 1
     }
