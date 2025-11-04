@@ -9,7 +9,7 @@ export interface NavigationMenuItem extends Struct.ComponentSchema {
     label: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.SetMinMaxLength<{
-        maxLength: 20;
+        maxLength: 50;
       }>;
     url: Schema.Attribute.String;
   };
@@ -31,7 +31,7 @@ export interface NavigationSubmenu extends Struct.ComponentSchema {
     title: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.SetMinMaxLength<{
-        maxLength: 20;
+        maxLength: 50;
       }>;
   };
 }

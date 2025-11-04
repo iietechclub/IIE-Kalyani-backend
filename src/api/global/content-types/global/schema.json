@@ -11,6 +11,19 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "contactNo": {
+      "type": "string",
+      "required": true
+    },
+    "contactEmail": {
+      "type": "email",
+      "required": true
+    },
+    "topMenus": {
+      "type": "component",
+      "component": "navigation.menu-item",
+      "repeatable": true
+    },
     "menus": {
       "type": "relation",
       "relation": "oneToMany",

@@ -13,11 +13,11 @@
   "attributes": {
     "title": {
       "type": "string",
-      "maxLength": 20,
+      "maxLength": 50,
       "required": true,
       "unique": false
     },
-    "type": {
+    "contains": {
       "type": "enumeration",
       "required": true,
       "default": "SubMenus",
@@ -46,7 +46,7 @@
         "visible": {
           "==": [
             {
-              "var": "type"
+              "var": "contains"
             },
             "MenuItems"
           ]
@@ -61,7 +61,7 @@
         "visible": {
           "==": [
             {
-              "var": "type"
+              "var": "contains"
             },
             "SubMenus"
           ]
