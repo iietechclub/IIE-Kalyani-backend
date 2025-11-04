@@ -475,6 +475,8 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    contactEmail: Schema.Attribute.Email & Schema.Attribute.Required;
+    contactNo: Schema.Attribute.String & Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -495,6 +497,7 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
       'oneToMany',
       'api::social-link.social-link'
     >;
+    topMenus: Schema.Attribute.Component<'navigation.menu-item', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -536,6 +539,9 @@ export interface ApiMenuMenu extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    contains: Schema.Attribute.Enumeration<['Link', 'MenuItems', 'SubMenus']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'SubMenus'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -548,11 +554,8 @@ export interface ApiMenuMenu extends Struct.CollectionTypeSchema {
     title: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.SetMinMaxLength<{
-        maxLength: 20;
+        maxLength: 50;
       }>;
-    type: Schema.Attribute.Enumeration<['Link', 'MenuItems', 'SubMenus']> &
-      Schema.Attribute.Required &
-      Schema.Attribute.DefaultTo<'SubMenus'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
