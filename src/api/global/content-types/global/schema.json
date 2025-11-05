@@ -11,6 +11,25 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "logoTitle": {
+      "type": "string",
+      "maxLength": 50,
+      "required": true
+    },
+    "logoSubtitle": {
+      "type": "string",
+      "maxLength": 60,
+      "required": true
+    },
+    "logoImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
     "contactNo": {
       "type": "string",
       "required": true
@@ -19,10 +38,18 @@
       "type": "email",
       "required": true
     },
-    "topMenus": {
+    "locationTitle": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 100,
+      "required": true
+    },
+    "topLinks": {
       "type": "component",
       "component": "navigation.menu-item",
-      "repeatable": true
+      "repeatable": true,
+      "required": true,
+      "min": 1
     },
     "menus": {
       "type": "relation",
@@ -35,7 +62,9 @@
       "target": "api::social-link.social-link"
     },
     "footerDescription": {
-      "type": "text"
+      "type": "text",
+      "minLength": 5,
+      "required": true
     },
     "footerColumns": {
       "type": "relation",

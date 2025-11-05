@@ -27,18 +27,20 @@
         "SubMenus"
       ]
     },
-    "url": {
-      "type": "string",
+    "link": {
+      "type": "component",
       "conditions": {
         "visible": {
           "==": [
             {
-              "var": "type"
+              "var": "contains"
             },
             "Link"
           ]
         }
-      }
+      },
+      "component": "ui.link-button",
+      "repeatable": false
     },
     "menuItems": {
       "type": "component",

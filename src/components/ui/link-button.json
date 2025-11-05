@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_ui_link_buttons",
+  "info": {
+    "displayName": "LinkButton"
+  },
+  "options": {},
+  "attributes": {
+    "variant": {
+      "type": "enumeration",
+      "required": true,
+      "default": "Ghost",
+      "enum": [
+        "Primary",
+        "Secondary",
+        "Ghost"
+      ]
+    },
+    "url": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::url.url"
+    }
+  },
+  "config": {}
+}

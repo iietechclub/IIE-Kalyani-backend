@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_media_banners",
+  "info": {
+    "displayName": "Banner"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 80,
+      "required": true
+    },
+    "tag": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 30,
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "minLength": 5,
+      "required": true
+    },
+    "ctaButtons": {
+      "type": "component",
+      "component": "ui.cta-button",
+      "repeatable": true,
+      "required": true,
+      "min": 1,
+      "max": 3
+    }
+  },
+  "config": {}
+}

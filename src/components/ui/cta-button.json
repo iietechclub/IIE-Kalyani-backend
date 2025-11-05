@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_ui_cta_buttons",
+  "info": {
+    "displayName": "CTAButton"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 30,
+      "required": true
+    },
+    "variant": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "Primary",
+        "Secondary",
+        "Ghost"
+      ]
+    },
+    "containsLink": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "url": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::url.url",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "containsLink"
+            },
+            true
+          ]
+        }
+      }
+    }
+  },
+  "config": {}
+}

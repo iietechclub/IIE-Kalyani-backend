@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "urls",
+  "info": {
+    "singularName": "url",
+    "pluralName": "urls",
+    "displayName": "Url"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "url": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 80,
+      "required": true
+    },
+    "newTab": {
+      "type": "boolean",
+      "required": false,
+      "default": false
+    },
+    "download": {
+      "type": "boolean",
+      "required": false,
+      "default": false
+    }
+  }
+}
