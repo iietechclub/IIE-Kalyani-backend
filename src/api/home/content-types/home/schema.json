@@ -12,11 +12,9 @@
   "pluginOptions": {},
   "attributes": {
     "banners": {
-      "type": "component",
-      "component": "media.banner",
-      "repeatable": true,
-      "required": true,
-      "min": 1
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::banner.banner"
     }
   }
 }

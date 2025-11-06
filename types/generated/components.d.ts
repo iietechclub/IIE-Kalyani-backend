@@ -1,40 +1,5 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
-export interface MediaBanner extends Struct.ComponentSchema {
-  collectionName: 'components_media_banners';
-  info: {
-    displayName: 'Banner';
-  };
-  attributes: {
-    ctaButtons: Schema.Attribute.Component<'ui.cta-button', true> &
-      Schema.Attribute.Required &
-      Schema.Attribute.SetMinMax<
-        {
-          max: 3;
-          min: 1;
-        },
-        number
-      >;
-    subtitle: Schema.Attribute.Text &
-      Schema.Attribute.Required &
-      Schema.Attribute.SetMinMaxLength<{
-        minLength: 5;
-      }>;
-    tag: Schema.Attribute.String &
-      Schema.Attribute.Required &
-      Schema.Attribute.SetMinMaxLength<{
-        maxLength: 30;
-        minLength: 2;
-      }>;
-    title: Schema.Attribute.String &
-      Schema.Attribute.Required &
-      Schema.Attribute.SetMinMaxLength<{
-        maxLength: 80;
-        minLength: 3;
-      }>;
-  };
-}
-
 export interface NavigationMenuItem extends Struct.ComponentSchema {
   collectionName: 'components_navbar_menu_items';
   info: {
@@ -108,7 +73,6 @@ export interface UiLinkButton extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
-      'media.banner': MediaBanner;
       'navigation.menu-item': NavigationMenuItem;
       'navigation.submenu': NavigationSubmenu;
       'ui.cta-button': UiCtaButton;
