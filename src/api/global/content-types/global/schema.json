@@ -11,6 +11,12 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "metadata": {
+      "type": "component",
+      "component": "seo.metadata",
+      "repeatable": false,
+      "required": true
+    },
     "logoTitle": {
       "type": "string",
       "maxLength": 50,
