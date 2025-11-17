@@ -15,6 +15,16 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::banner.banner"
+    },
+    "why_choose_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::why-choose.why-choose"
+    },
+    "departments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::department.department"
     }
   }
 }

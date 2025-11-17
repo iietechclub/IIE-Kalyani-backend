@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "why_chooses",
+  "info": {
+    "singularName": "why-choose",
+    "pluralName": "why-chooses",
+    "displayName": "WhyChoose"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 200,
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "minLength": 5,
+      "required": true
+    }
+  }
+}
