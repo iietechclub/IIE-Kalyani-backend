@@ -17,6 +17,21 @@
       "repeatable": false,
       "required": true
     },
+    "contactNo": {
+      "type": "string",
+      "required": true
+    },
+    "contactEmail": {
+      "type": "email",
+      "required": true
+    },
+    "topLinks": {
+      "type": "component",
+      "component": "navigation.menu-item",
+      "repeatable": true,
+      "required": true,
+      "min": 1
+    },
     "logoTitle": {
       "type": "string",
       "maxLength": 50,
@@ -32,30 +47,14 @@
       "multiple": false,
       "required": true,
       "allowedTypes": [
-        "images",
-        "files"
+        "images"
       ]
     },
-    "contactNo": {
-      "type": "string",
-      "required": true
-    },
-    "contactEmail": {
-      "type": "email",
-      "required": true
-    },
-    "locationTitle": {
+    "location": {
       "type": "string",
       "minLength": 5,
       "maxLength": 100,
       "required": true
-    },
-    "topLinks": {
-      "type": "component",
-      "component": "navigation.menu-item",
-      "repeatable": true,
-      "required": true,
-      "min": 1
     },
     "menus": {
       "type": "relation",

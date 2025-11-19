@@ -13,9 +13,11 @@
   "attributes": {
     "platform": {
       "type": "enumeration",
+      "required": true,
       "enum": [
         "Facebook",
         "Twitter",
+        "LinkedIn",
         "Instagram",
         "YouTube",
         "WhatsApp"

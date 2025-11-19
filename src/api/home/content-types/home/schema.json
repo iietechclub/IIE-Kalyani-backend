@@ -25,6 +25,16 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::department.department"
+    },
+    "facilities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::facility.facility"
+    },
+    "gallery_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::gallery-item.gallery-item"
     }
   }
 }
