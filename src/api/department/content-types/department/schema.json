@@ -42,7 +42,7 @@
     "icon": {
       "type": "customField",
       "customField": "plugin::icon-picker.icon",
-      "required": true
+      "required": false
     }
   }
 }

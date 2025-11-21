@@ -2,6 +2,6 @@
  * url router
  */
 
-import { factories } from '@strapi/strapi';
+import { factories } from "@strapi/strapi";
 
-export default factories.createCoreRouter('api::url.url');
+export default factories.createCoreRouter("api::url.url");

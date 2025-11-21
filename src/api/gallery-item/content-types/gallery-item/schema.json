@@ -27,10 +27,7 @@
       "type": "enumeration",
       "required": true,
       "default": "Image",
-      "enum": [
-        "Image",
-        "Video"
-      ]
+      "enum": ["Image", "Video"]
     },
     "image": {
       "type": "media",
@@ -46,9 +43,7 @@
       },
       "multiple": false,
       "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+      "allowedTypes": ["images"]
     },
     "videoPreview": {
       "type": "media",
@@ -63,9 +58,7 @@
         }
       },
       "multiple": false,
-      "allowedTypes": [
-        "videos"
-      ]
+      "allowedTypes": ["videos"]
     },
     "youtubeUrl": {
       "type": "string",

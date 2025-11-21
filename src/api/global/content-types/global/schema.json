@@ -25,24 +25,20 @@
       "type": "email",
       "required": true
     },
-    "topLinks": {
+    "location": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 100,
+      "required": true
+    },
+    "quickLinks": {
       "type": "component",
       "component": "navigation.menu-item",
       "repeatable": true,
       "required": true,
       "min": 1
     },
-    "logoTitle": {
-      "type": "string",
-      "maxLength": 50,
-      "required": true
-    },
-    "logoSubtitle": {
-      "type": "string",
-      "maxLength": 60,
-      "required": true
-    },
-    "logoImage": {
+    "organizationLogo": {
       "type": "media",
       "multiple": false,
       "required": true,
@@ -50,10 +46,19 @@
         "images"
       ]
     },
-    "location": {
+    "organizationName": {
       "type": "string",
-      "minLength": 5,
-      "maxLength": 100,
+      "maxLength": 50,
+      "required": true
+    },
+    "organizationShortName": {
+      "type": "string",
+      "maxLength": 30,
+      "required": true
+    },
+    "organizationSubtitle": {
+      "type": "string",
+      "maxLength": 60,
       "required": true
     },
     "menus": {

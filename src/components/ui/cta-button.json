@@ -14,11 +14,7 @@
     "variant": {
       "type": "enumeration",
       "required": true,
-      "enum": [
-        "Primary",
-        "Secondary",
-        "Ghost"
-      ]
+      "enum": ["Primary", "Secondary", "Ghost"]
     },
     "containsLink": {
       "type": "boolean",

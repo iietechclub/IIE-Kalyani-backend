@@ -2,6 +2,6 @@
  * why-choose service
  */
 
-import { factories } from '@strapi/strapi';
+import { factories } from "@strapi/strapi";
 
-export default factories.createCoreService('api::why-choose.why-choose');
+export default factories.createCoreService("api::why-choose.why-choose");

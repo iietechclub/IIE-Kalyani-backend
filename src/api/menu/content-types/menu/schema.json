@@ -21,11 +21,7 @@
       "type": "enumeration",
       "required": true,
       "default": "SubMenus",
-      "enum": [
-        "Link",
-        "MenuItems",
-        "SubMenus"
-      ]
+      "enum": ["Link", "MenuItems", "SubMenus"]
     },
     "link": {
       "type": "component",

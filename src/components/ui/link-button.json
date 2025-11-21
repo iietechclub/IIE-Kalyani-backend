@@ -9,11 +9,7 @@
       "type": "enumeration",
       "required": true,
       "default": "Ghost",
-      "enum": [
-        "Primary",
-        "Secondary",
-        "Ghost"
-      ]
+      "enum": ["Primary", "Secondary", "Ghost"]
     },
     "url": {
       "type": "relation",

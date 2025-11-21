@@ -25,6 +25,15 @@
       "maxLength": 150,
       "required": true
     },
+    "tag": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 30
+    },
+    "icon": {
+      "type": "customField",
+      "customField": "plugin::icon-picker.icon"
+    },
     "description": {
       "type": "text",
       "minLength": 5,
