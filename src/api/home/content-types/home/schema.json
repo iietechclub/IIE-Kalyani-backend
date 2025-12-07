@@ -21,20 +21,92 @@
       "relation": "oneToMany",
       "target": "api::why-choose.why-choose"
     },
+    "departments_tagline": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 300,
+      "required": true
+    },
     "departments": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::department.department"
+    },
+    "facilities_tagline": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 300,
+      "required": true
     },
     "facilities": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::facility.facility"
     },
+    "gallery_tagline": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 300,
+      "required": true
+    },
     "gallery_items": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::gallery-item.gallery-item"
+    },
+    "our_recruiters_tagline": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 300,
+      "required": true
+    },
+    "our_recruiters_avg_offers": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "our_recruiters_internship_offers": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "our_recruiters_avg_ctc": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "our_recruiters_recruiting_sectors": {
+      "type": "component",
+      "component": "ui.icon-badge",
+      "repeatable": true,
+      "required": true,
+      "min": 1,
+      "max": 20
+    },
+    "our_creative_team_tagline": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 300,
+      "required": true
+    },
+    "our_creative_team_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "our_creative_team_youtube_video_link": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 50,
+      "required": true
+    },
+    "our_creative_team_quotation": {
+      "type": "text",
+      "minLength": 5,
+      "required": true
     }
   }
 }

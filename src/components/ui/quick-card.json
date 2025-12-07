@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_ui_quick_cards",
+  "info": {
+    "displayName": "QuickCard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 200,
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "minLength": 5,
+      "maxLength": 360,
+      "required": true
+    },
+    "icon": {
+      "type": "customField",
+      "customField": "plugin::icon-picker.icon"
+    }
+  },
+  "config": {}
+}

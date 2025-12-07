@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_ui_short_texts",
+  "info": {
+    "displayName": "ShortText"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

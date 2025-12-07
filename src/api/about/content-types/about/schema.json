@@ -1,0 +1,78 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "About"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 160,
+      "required": true
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "alumni": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "placement_percentage": {
+      "type": "integer",
+      "required": true,
+      "min": 0,
+      "max": 100
+    },
+    "welcome_description": {
+      "type": "blocks",
+      "required": true
+    },
+    "welcome_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "why_choose_points": {
+      "type": "component",
+      "component": "ui.short-text",
+      "repeatable": true,
+      "required": true,
+      "max": 12
+    },
+    "welfare_hub_description": {
+      "type": "blocks",
+      "required": true
+    },
+    "welfare_hub_tagline": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 160,
+      "required": true
+    },
+    "welfare_hub_org_description": {
+      "type": "blocks",
+      "required": true
+    },
+    "welfare_hub_org_tagline": {
+      "type": "text",
+      "minLength": 5,
+      "required": true
+    }
+  }
+}
