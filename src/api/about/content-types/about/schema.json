@@ -40,13 +40,11 @@
       "type": "blocks",
       "required": true
     },
-    "welcome_image": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ]
+    "welcome_video_youtube_link": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 50,
+      "required": true
     },
     "why_choose_points": {
       "type": "component",

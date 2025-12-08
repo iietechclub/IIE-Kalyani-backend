@@ -1,0 +1,50 @@
+{
+  "kind": "singleType",
+  "collectionName": "vision_and_missions",
+  "info": {
+    "singularName": "vision-and-mission",
+    "pluralName": "vision-and-missions",
+    "displayName": "Vision & Mission"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 300,
+      "required": true
+    },
+    "vision": {
+      "type": "blocks",
+      "required": true
+    },
+    "missions": {
+      "type": "component",
+      "component": "ui.short-text",
+      "repeatable": true,
+      "required": true,
+      "max": 6
+    },
+    "core_values": {
+      "type": "component",
+      "component": "ui.quick-card",
+      "repeatable": true
+    },
+    "objectives": {
+      "type": "component",
+      "component": "ui.short-text",
+      "repeatable": true,
+      "required": true,
+      "max": 6
+    },
+    "quote": {
+      "type": "text",
+      "minLength": 5,
+      "maxLength": 500,
+      "required": true
+    }
+  }
+}

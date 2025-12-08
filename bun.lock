@@ -5,6 +5,7 @@
       "name": "backend",
       "dependencies": {
         "@d3levvv/strapi-react-icons-plugin": "^1.0.0",
+        "@sensinum/strapi-table-field": "^1.0.1",
         "@strapi/plugin-cloud": "5.29.0",
         "@strapi/plugin-graphql": "^5.29.0",
         "@strapi/plugin-users-permissions": "5.29.0",
@@ -526,6 +527,8 @@
     "@rushstack/ts-command-line": ["@rushstack/ts-command-line@4.23.7", "", { "dependencies": { "@rushstack/terminal": "0.15.2", "@types/argparse": "1.0.38", "argparse": "~1.0.9", "string-argv": "~0.3.1" } }, "sha512-Gr9cB7DGe6uz5vq2wdr89WbVDKz0UeuFEn5H2CfWDe7JvjFFaiV15gi6mqDBTbHhHCWS7w8mF1h3BnIfUndqdA=="],
 
     "@sec-ant/readable-stream": ["@sec-ant/readable-stream@0.4.1", "", {}, "sha512-831qok9r2t8AlxLko40y2ebgSDhenenCatLVeW/uBtnHPyhHOvG0C7TvfgecV+wHzIm5KUICgzmVpWS+IMEAeg=="],
+
+    "@sensinum/strapi-table-field": ["@sensinum/strapi-table-field@1.0.1", "", { "dependencies": { "react-intl": "^7.1.6" }, "peerDependencies": { "@strapi/sdk-plugin": "^5.0.0", "@strapi/strapi": "^5.0.0", "react": "^17.0.0 || ^18.0.0", "react-dom": "^17.0.0 || ^18.0.0", "react-router-dom": "^6.0.0", "styled-components": "^6.0.0" } }, "sha512-6C2EnhMkFMLkMkGUduhSek0Byx3zwEkeN4dw4dENVwnHxuHd9F9xKUs/1TjdD9Zzqg7A++UhL9ukxMXDDtS6pA=="],
 
     "@simov/deep-extend": ["@simov/deep-extend@1.0.0", "", {}, "sha512-Arv8/ZPcdKAMJnNF8cks35mPq1y3JnwH1lWpfWDKlJoj+Vw2xmA4+oL7m9GVHTgdX0mGFR7bCPTBTGbxhnfJJw=="],
 
