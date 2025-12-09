@@ -1,4 +1,9 @@
-const preventedEndpoints = ["api::global.global", "api::home.home"];
+const preventedEndpoints = [
+  "api::global.global",
+  "api::home.home",
+  "api::about.about",
+  "api::vision-and-mission.vision-and-mission"
+];
 
 export default () => async (ctx, next) => {
   const { method, url } = ctx.request;
