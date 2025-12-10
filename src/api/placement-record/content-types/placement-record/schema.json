@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "placement_records",
+  "info": {
+    "singularName": "placement-record",
+    "pluralName": "placement-records",
+    "displayName": "Placement Record"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "companies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::company.company"
+    }
+  }
+}

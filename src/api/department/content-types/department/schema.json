@@ -17,6 +17,17 @@
       "maxLength": 200,
       "required": true
     },
+    "short_name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 15,
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
     "tagline": {
       "type": "text",
       "minLength": 5,

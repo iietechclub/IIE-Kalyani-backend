@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student_developers",
+  "info": {
+    "singularName": "student-developer",
+    "pluralName": "student-developers",
+    "displayName": "StudentDeveloper"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 100,
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "contribution": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 160,
+      "required": true
+    },
+    "department": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::department.department"
+    },
+    "github": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 200,
+      "required": true
+    },
+    "linkedin": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 200,
+      "required": true
+    }
+  }
+}

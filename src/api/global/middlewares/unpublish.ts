@@ -1,8 +1,11 @@
-const preventedEndpoints = [
+import type { UID } from "@strapi/strapi"
+
+const preventedEndpoints: UID.ContentType[] = [
   "api::global.global",
   "api::home.home",
   "api::about.about",
-  "api::vision-and-mission.vision-and-mission"
+  "api::vision-and-mission.vision-and-mission",
+  "api::placement-record.placement-record"
 ];
 
 export default () => async (ctx, next) => {

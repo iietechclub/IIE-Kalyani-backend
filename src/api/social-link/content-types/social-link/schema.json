@@ -15,6 +15,7 @@
       "type": "enumeration",
       "required": true,
       "enum": [
+        "GitHub",
         "Facebook",
         "Twitter",
         "LinkedIn",
