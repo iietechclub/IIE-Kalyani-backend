@@ -21,7 +21,11 @@
       "type": "enumeration",
       "required": true,
       "default": "SubMenus",
-      "enum": ["Link", "MenuItems", "SubMenus"]
+      "enum": [
+        "Link",
+        "MenuItems",
+        "SubMenus"
+      ]
     },
     "link": {
       "type": "component",
@@ -67,6 +71,56 @@
       },
       "component": "navigation.submenu",
       "repeatable": true
+    },
+    "image": {
+      "type": "media",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "contains"
+            },
+            "SubMenus"
+          ]
+        }
+      },
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "image_title": {
+      "type": "string",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "contains"
+            },
+            "SubMenus"
+          ]
+        }
+      },
+      "minLength": 3,
+      "maxLength": 160,
+      "required": false
+    },
+    "image_subtitle": {
+      "type": "text",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "contains"
+            },
+            "SubMenus"
+          ]
+        }
+      },
+      "minLength": 5,
+      "maxLength": 200,
+      "required": false
     }
   }
 }
