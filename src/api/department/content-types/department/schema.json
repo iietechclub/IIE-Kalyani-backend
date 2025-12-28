@@ -54,6 +54,59 @@
       "type": "customField",
       "customField": "plugin::icon-picker.icon",
       "required": false
+    },
+    "hod": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::facility.facility"
+    },
+    "hod_message": {
+      "type": "text",
+      "minLength": 5,
+      "required": true
+    },
+    "oneline_vision": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 160,
+      "required": true
+    },
+    "oneline_mission": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 160,
+      "required": true
+    },
+    "oneline_labs": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 120,
+      "required": true
+    },
+    "about": {
+      "type": "blocks",
+      "required": true
+    },
+    "about_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "vision": {
+      "type": "blocks",
+      "required": true
+    },
+    "mission": {
+      "type": "blocks",
+      "required": true
+    },
+    "labs": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::gallery-item.gallery-item"
     }
   }
 }
