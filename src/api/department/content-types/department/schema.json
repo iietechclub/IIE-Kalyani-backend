@@ -58,7 +58,7 @@
     "hod": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::facility.facility"
+      "target": "api::faculty.faculty"
     },
     "hod_message": {
       "type": "text",
