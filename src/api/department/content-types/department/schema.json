@@ -77,12 +77,6 @@
       "maxLength": 160,
       "required": true
     },
-    "oneline_labs": {
-      "type": "string",
-      "minLength": 3,
-      "maxLength": 120,
-      "required": true
-    },
     "about": {
       "type": "blocks",
       "required": true
