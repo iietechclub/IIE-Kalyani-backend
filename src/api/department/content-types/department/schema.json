@@ -89,6 +89,12 @@
         "images"
       ]
     },
+    "vision_mission_tagline": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 200,
+      "required": true
+    },
     "vision": {
       "type": "blocks",
       "required": true
@@ -99,7 +105,7 @@
     },
     "labs": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::gallery-item.gallery-item"
     }
   }
