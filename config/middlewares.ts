@@ -1,7 +1,20 @@
-export default [
+export default ({ env }) => [
   "strapi::logger",
   "strapi::errors",
-  "strapi::security",
+  {
+    name: 'strapi::security',
+    config: {
+      contentSecurityPolicy: {
+        useDefaults: true,
+        directives: {
+          'frame-ancestors': [
+            "'self'",
+            env('FRONTEND_URL'),
+          ],
+        },
+      },
+    },
+  },
   "strapi::cors",
   // 'strapi::poweredBy',
 

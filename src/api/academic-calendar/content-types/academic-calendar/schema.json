@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "academic_calendars",
+  "info": {
+    "singularName": "academic-calendar",
+    "pluralName": "academic-calendars",
+    "displayName": "Academic Calendar"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "session": {
+      "type": "string",
+      "required": true,
+      "regex": "^[0-9]{4}-[0-9]{4}$"
+    },
+    "calendar_pdf": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    }
+  }
+}
