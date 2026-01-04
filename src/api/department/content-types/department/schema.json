@@ -54,6 +54,65 @@
       "type": "customField",
       "customField": "plugin::icon-picker.icon",
       "required": false
+    },
+    "hod": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::faculty.faculty"
+    },
+    "hod_message": {
+      "type": "text",
+      "minLength": 5,
+      "required": true
+    },
+    "oneline_vision": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 160,
+      "required": true
+    },
+    "oneline_mission": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 160,
+      "required": true
+    },
+    "about": {
+      "type": "blocks",
+      "required": true
+    },
+    "about_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "vision_mission_tagline": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 200,
+      "required": true
+    },
+    "vision": {
+      "type": "blocks",
+      "required": true
+    },
+    "mission": {
+      "type": "blocks",
+      "required": true
+    },
+    "labs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::gallery-item.gallery-item"
+    },
+    "faculties": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::faculty.faculty",
+      "mappedBy": "departments"
     }
   }
 }

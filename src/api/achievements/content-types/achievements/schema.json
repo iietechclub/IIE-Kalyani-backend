@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "achievements_full",
+  "info": {
+    "singularName": "achievements",
+    "pluralName": "achievements-full",
+    "displayName": "Achievements"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "student_achievements": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::student-achievement.student-achievement"
+    }
+  }
+}

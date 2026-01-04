@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "libraries",
+  "info": {
+    "singularName": "library",
+    "pluralName": "libraries",
+    "displayName": "Library"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "introduction": {
+      "type": "blocks",
+      "required": true
+    },
+    "gallery_images": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::gallery-item.gallery-item"
+    },
+    "resources": {
+      "type": "component",
+      "component": "ui.link-image-card",
+      "repeatable": true
+    }
+  }
+}

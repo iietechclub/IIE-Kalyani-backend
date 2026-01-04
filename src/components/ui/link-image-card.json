@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_ui_link_image_cards",
+  "info": {
+    "displayName": "LinkImageCard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "text",
+      "minLength": 5,
+      "maxLength": 500,
+      "required": true
+    },
+    "url": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::url.url"
+    }
+  },
+  "config": {}
+}

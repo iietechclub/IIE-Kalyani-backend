@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faculties",
+  "info": {
+    "singularName": "faculty",
+    "pluralName": "faculties",
+    "displayName": "Faculty"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 120,
+      "required": true
+    },
+    "departments": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::department.department",
+      "inversedBy": "faculties"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "designation": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 60,
+      "required": true
+    },
+    "qualifications": {
+      "type": "component",
+      "component": "ui.short-text",
+      "repeatable": true,
+      "required": true,
+      "min": 1,
+      "max": 12
+    }
+  }
+}

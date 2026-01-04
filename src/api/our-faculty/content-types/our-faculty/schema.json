@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "our_faculties",
+  "info": {
+    "singularName": "our-faculty",
+    "pluralName": "our-faculties",
+    "displayName": "Our Faculty"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "departments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::department.department"
+    }
+  }
+}
