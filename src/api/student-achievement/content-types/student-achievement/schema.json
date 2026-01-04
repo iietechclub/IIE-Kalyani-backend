@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student_achievements",
+  "info": {
+    "singularName": "student-achievement",
+    "pluralName": "student-achievements",
+    "displayName": "StudentAchievement"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 160,
+      "required": true
+    },
+    "winner": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 200,
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "minLength": 5,
+      "maxLength": 300,
+      "required": true
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}

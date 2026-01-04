@@ -17,6 +17,12 @@
       "maxLength": 120,
       "required": true
     },
+    "departments": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::department.department",
+      "inversedBy": "faculties"
+    },
     "image": {
       "type": "media",
       "multiple": false,
@@ -25,10 +31,19 @@
         "images"
       ]
     },
-    "department": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::department.department"
+    "designation": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 60,
+      "required": true
+    },
+    "qualifications": {
+      "type": "component",
+      "component": "ui.short-text",
+      "repeatable": true,
+      "required": true,
+      "min": 1,
+      "max": 12
     }
   }
 }

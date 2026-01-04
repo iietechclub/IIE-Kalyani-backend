@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_bank_items",
+  "info": {
+    "singularName": "project-bank-item",
+    "pluralName": "project-bank-items",
+    "displayName": "ProjectBankItem"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 300,
+      "required": true
+    },
+    "department": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::department.department"
+    },
+    "field": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 120,
+      "required": true
+    },
+    "year": {
+      "type": "string",
+      "minLength": 4,
+      "maxLength": 4,
+      "required": true,
+      "regex": "^[1-9]{1}[0-9]{3}$"
+    },
+    "icon": {
+      "type": "customField",
+      "customField": "plugin::icon-picker.icon",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "minLength": 5,
+      "maxLength": 500,
+      "required": true
+    },
+    "guides": {
+      "type": "component",
+      "component": "ui.short-text",
+      "repeatable": true,
+      "required": true,
+      "min": 1
+    },
+    "students": {
+      "type": "component",
+      "component": "ui.short-text",
+      "repeatable": true
+    }
+  }
+}

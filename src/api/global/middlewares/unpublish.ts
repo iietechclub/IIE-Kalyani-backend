@@ -5,7 +5,14 @@ const preventedEndpoints: UID.ContentType[] = [
   "api::home.home",
   "api::about.about",
   "api::vision-and-mission.vision-and-mission",
-  "api::placement-record.placement-record"
+  
+  "api::academic-calendar.academic-calendar",
+  "api::library.library",
+  "api::project-bank.project-bank",
+  "api::achievements.achievements",
+  "api::our-faculty.our-faculty",
+
+  "api::placement-record.placement-record",
 ];
 
 export default () => async (ctx, next) => {

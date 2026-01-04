@@ -107,6 +107,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::gallery-item.gallery-item"
+    },
+    "faculties": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::faculty.faculty",
+      "mappedBy": "departments"
     }
   }
 }

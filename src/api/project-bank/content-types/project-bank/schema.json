@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "project_banks",
+  "info": {
+    "singularName": "project-bank",
+    "pluralName": "project-banks",
+    "displayName": "Project Bank"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project-bank-item.project-bank-item"
+    }
+  }
+}
