@@ -13,6 +13,7 @@ const preventedEndpoints: UID.ContentType[] = [
   "api::our-faculty.our-faculty",
 
   "api::placement-record.placement-record",
+  "api::success-stories-page.success-stories-page",
 ];
 
 export default () => async (ctx, next) => {

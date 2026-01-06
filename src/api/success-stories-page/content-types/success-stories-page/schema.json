@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "success_stories_full_page",
+  "info": {
+    "singularName": "success-stories-page",
+    "pluralName": "success-stories-full-page",
+    "displayName": "SuccessStories"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "success_stories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::success-story.success-story"
+    }
+  }
+}
