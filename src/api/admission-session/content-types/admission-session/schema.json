@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "admission_sessions",
+  "info": {
+    "singularName": "admission-session",
+    "pluralName": "admission-sessions",
+    "displayName": "Admission Session"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "session": {
+      "type": "string",
+      "minLength": 9,
+      "maxLength": 9,
+      "required": true,
+      "regex": "^[1-9]{1}[0-9]{3}-[1-9]{1}[0-9]{3}$"
+    },
+    "btech_programs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::department.department"
+    },
+    "bba_programs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::department.department"
+    }
+  }
+}

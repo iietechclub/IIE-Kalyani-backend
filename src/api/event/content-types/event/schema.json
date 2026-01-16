@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 160,
+      "required": true
+    },
+    "multiple_days": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "start": {
+      "type": "date",
+      "required": true
+    },
+    "end": {
+      "type": "date",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "multiple_days"
+            },
+            true
+          ]
+        }
+      }
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "text",
+      "minLength": 5,
+      "maxLength": 400,
+      "required": true
+    },
+    "tags": {
+      "type": "component",
+      "component": "ui.short-text",
+      "repeatable": true
+    }
+  }
+}

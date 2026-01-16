@@ -17,6 +17,18 @@
       "maxLength": 150,
       "required": true
     },
+    "category": {
+      "type": "enumeration",
+      "required": true,
+      "default": "All",
+      "enum": [
+        "All",
+        "Campus",
+        "Events",
+        "Academics",
+        "Sports"
+      ]
+    },
     "tag": {
       "type": "string",
       "minLength": 2,
@@ -27,7 +39,10 @@
       "type": "enumeration",
       "required": true,
       "default": "Image",
-      "enum": ["Image", "Video"]
+      "enum": [
+        "Image",
+        "Video"
+      ]
     },
     "image": {
       "type": "media",
@@ -43,7 +58,9 @@
       },
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "videoPreview": {
       "type": "media",
@@ -58,7 +75,9 @@
         }
       },
       "multiple": false,
-      "allowedTypes": ["videos"]
+      "allowedTypes": [
+        "videos"
+      ]
     },
     "youtubeUrl": {
       "type": "string",

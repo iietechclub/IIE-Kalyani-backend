@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "technical_events_and_seminars_full",
+  "info": {
+    "singularName": "technical-events-and-seminars",
+    "pluralName": "technical-events-and-seminars-full",
+    "displayName": "Technical Events & Seminars"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "upcoming_events": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::event.event"
+    },
+    "past_events": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::event.event"
+    }
+  }
+}

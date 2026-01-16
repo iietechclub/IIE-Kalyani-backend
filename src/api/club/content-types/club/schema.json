@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clubs",
+  "info": {
+    "singularName": "club",
+    "pluralName": "clubs",
+    "displayName": "Club"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 180,
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "preview_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "tagline": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 250,
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "minLength": 5,
+      "maxLength": 400,
+      "required": true
+    }
+  }
+}

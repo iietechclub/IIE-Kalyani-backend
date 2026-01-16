@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alumni_members",
+  "info": {
+    "singularName": "alumni-member",
+    "pluralName": "alumni-members",
+    "displayName": "AlumniMember"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 160,
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 180,
+      "required": true
+    },
+    "batch": {
+      "type": "string",
+      "minLength": 4,
+      "maxLength": 4,
+      "required": true,
+      "regex": "^[1-9]{1}[0-9]{3}$"
+    },
+    "company": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::company.company"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "text",
+      "minLength": 2,
+      "maxLength": 400,
+      "required": true
+    }
+  }
+}

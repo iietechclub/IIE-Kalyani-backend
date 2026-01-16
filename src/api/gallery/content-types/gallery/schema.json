@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "galleries",
+  "info": {
+    "singularName": "gallery",
+    "pluralName": "galleries",
+    "displayName": "Gallery"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "gallery_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::gallery-item.gallery-item"
+    }
+  }
+}

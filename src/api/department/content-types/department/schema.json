@@ -34,6 +34,12 @@
       "maxLength": 400,
       "required": true
     },
+    "duration": {
+      "type": "integer",
+      "required": true,
+      "min": 0,
+      "max": 6
+    },
     "previewImage": {
       "type": "media",
       "multiple": false,

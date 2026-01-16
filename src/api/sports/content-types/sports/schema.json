@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "sports_full",
+  "info": {
+    "singularName": "sports",
+    "pluralName": "sports-full",
+    "displayName": "Sports"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "gallery_highlights": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::gallery-item.gallery-item"
+    }
+  }
+}

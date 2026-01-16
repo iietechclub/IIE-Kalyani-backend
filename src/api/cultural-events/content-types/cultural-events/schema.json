@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "cultural_events_full",
+  "info": {
+    "singularName": "cultural-events",
+    "pluralName": "cultural-events-full",
+    "displayName": "Cultural Events"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "activities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::activity.activity"
+    },
+    "gallery_images": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::gallery-item.gallery-item"
+    },
+    "upcoming_events": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::event.event"
+    }
+  }
+}
