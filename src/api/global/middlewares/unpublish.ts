@@ -8,6 +8,7 @@ const preventedEndpoints: UID.ContentType[] = [
 
   "api::admission-session.admission-session",
   "api::courses-offered.courses-offered",
+  "api::fee-structure.fee-structure",
   
   "api::academic-calendar.academic-calendar",
   "api::library.library",
@@ -24,6 +25,8 @@ const preventedEndpoints: UID.ContentType[] = [
   "api::clubs-and-societies.clubs-and-societies",
   "api::sports.sports",
   "api::gallery.gallery",
+
+  "api::students-section.students-section",
 ];
 
 export default () => async (ctx, next) => {

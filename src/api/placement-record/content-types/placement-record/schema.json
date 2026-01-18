@@ -11,6 +11,11 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "departments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::department.department"
+    },
     "companies": {
       "type": "relation",
       "relation": "oneToMany",

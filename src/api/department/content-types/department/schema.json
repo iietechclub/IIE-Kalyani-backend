@@ -119,6 +119,12 @@
       "relation": "manyToMany",
       "target": "api::faculty.faculty",
       "mappedBy": "departments"
+    },
+    "placement_data": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::placement-data.placement-data",
+      "inversedBy": "department"
     }
   }
 }

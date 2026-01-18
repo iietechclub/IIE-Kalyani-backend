@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "students_sections",
+  "info": {
+    "singularName": "students-section",
+    "pluralName": "students-sections",
+    "displayName": "Students Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "notices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::notice.notice"
+    },
+    "student_achievements": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::student-achievement.student-achievement"
+    }
+  }
+}

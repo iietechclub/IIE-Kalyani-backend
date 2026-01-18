@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "fee_structures",
+  "info": {
+    "singularName": "fee-structure",
+    "pluralName": "fee-structures",
+    "displayName": "Fee Structure"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "important_notes": {
+      "type": "component",
+      "component": "ui.short-text",
+      "repeatable": true,
+      "required": true,
+      "min": 1
+    },
+    "general_fees_btech": {
+      "type": "customField",
+      "customField": "plugin::table-field.table"
+    },
+    "general_fees_btech_lateral_entry": {
+      "type": "customField",
+      "customField": "plugin::table-field.table"
+    },
+    "makaut_fees_btech_and_btech_lateral_entry": {
+      "type": "customField",
+      "customField": "plugin::table-field.table"
+    },
+    "general_fees_bba": {
+      "type": "customField",
+      "customField": "plugin::table-field.table"
+    },
+    "total": {
+      "type": "biginteger",
+      "required": true,
+      "min": "1"
+    },
+    "fees_structure_pdf": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    }
+  }
+}

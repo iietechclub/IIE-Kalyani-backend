@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "placement_data_list",
+  "info": {
+    "singularName": "placement-data",
+    "pluralName": "placement-data-list",
+    "displayName": "PlacementData"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "department": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::department.department",
+      "mappedBy": "placement_data"
+    },
+    "table": {
+      "type": "customField",
+      "customField": "plugin::table-field.table"
+    },
+    "students_placement_percentage": {
+      "type": "decimal",
+      "required": true,
+      "min": 0,
+      "max": 100
+    }
+  }
+}
