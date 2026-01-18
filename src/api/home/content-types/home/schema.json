@@ -60,6 +60,11 @@
       "maxLength": 300,
       "required": true
     },
+    "our_recruiters_apply_now": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::url.url"
+    },
     "our_recruiters_avg_offers": {
       "type": "integer",
       "required": true,
