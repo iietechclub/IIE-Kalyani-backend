@@ -10,7 +10,8 @@ export default ({ env }) => [
           'frame-ancestors': [
             "'self'",
             env('FRONTEND_URL'),
-          ],
+            env('FRONTEND_DEV_URL'),
+          ].filter(Boolean),
         },
       },
     },
